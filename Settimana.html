@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Esercizio Settimana</title>
+</head>
+<body>
+    <nav>
+        <ol>
+            <li>Lunedi</li>
+            <li>Martedi</li>
+            <li>Mercoledi</li>
+            <li>Giovedi</li>
+            <li>Venerdi</li>
+            <li>Sabato</li>
+            <li>Domenica</li>
+        </ol>
+    </nav>
+
+    <script type="text/javascript">
+        var settimana = prompt("Inserisci un numero tra 1 e 7");
+
+
+        while(settimana<1 || settimana>7) {
+            alert("Hai inserito un numero errato.Riprova");
+            settimana = prompt("Inserisci un numero tra 1 e 7");
+        }
+
+        if (settimana==1)
+            alert("Lunedi");
+
+        if (settimana==2)
+            alert("Martedi");
+
+        if (settimana==3)
+            alert("Mercoledi");
+
+        if (settimana==4)
+            alert("Giovedi");
+
+        if (settimana==5)
+            alert("Venerdi");
+
+        if (settimana==6)
+            alert("Sabato");
+
+        if (settimana==7)
+            alert("Domenica");
+            
+    </script>
+    
+</body>
+</html>

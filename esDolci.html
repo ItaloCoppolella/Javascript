@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <ol>
+            <li>Tiramisu</li>
+            <li>Torta della nonna</li>
+            <li>Cheesecake alla nutella</li>
+            <li>Macedonia</li>
+        </ol>
+    </nav>
+
+    <SCRIPT type="text/javascript">
+        var scelta = prompt("Inserisci la scelta desiderata tra 1 e 4 ");
+    
+        //alert("Hai selezionato il dolce N. " + scelta);
+
+        while(scelta>4 || scelta<1) {
+            alert("Hai scelto un dolce non disponibile. Riprova! ");
+            scelta = prompt("Inserisci la scelta desiderata tra 1 e 4 ");
+        }
+        
+        if (scelta==1)
+            alert("Hai scelto il Tiramisu");
+
+        if (scelta==2)
+            alert("Hai scelto la Torta della nonna");
+
+        if (scelta==3)
+            alert("Hai scelto la Cheesecake alla nutella");
+
+        if (scelta==4)
+            alert("Hai scelto la Macedonia");
+    </SCRIPT>
+    
+</body>
+</html>

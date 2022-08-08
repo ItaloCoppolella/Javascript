@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var nLanci = prompt("Quanti lanci vogliamo fare? ");
+
+
+        // VARIABILI GIOCATORE 1 e 2
+
+        var contatoreGiocatore1 = totaleGiocatore1 = temporanea = 0;
+        
+        var contatoreGiocatore2 = totaleGiocatore2 = 0;
+
+
+        // CICLI CALCOLA PUNTEGGIO
+
+
+        document.write("Risultati Giocatore N.1 : ");
+
+        while (contatoreGiocatore1 < nLanci) {
+            contatoreGiocatore1++;
+            temporanea = Math.floor(Math.random()*5+1);
+            document.write(temporanea + " ");
+            totaleGiocatore1 = totaleGiocatore1 + temporanea;
+        }
+
+        document.write("<br>");
+
+        document.write("Totale giocatore : " + totaleGiocatore1);
+
+        document.write("<br><br>");
+
+        document.write(" Risultati Giocatore N.2 : ");
+
+
+        while (contatoreGiocatore2 < nLanci) {
+            contatoreGiocatore2++;
+            temporanea = Math.floor(Math.random()*5+1);
+            document.write(temporanea + " ");
+            totaleGiocatore2 = totaleGiocatore2 + temporanea;
+        }
+
+
+        document.write("<br>");
+
+        document.write("Totale giocatore : " + totaleGiocatore2);
+
+        // CICLO STAMPA VINCITORE
+
+        if (totaleGiocatore1 > totaleGiocatore2)
+        alert("Ha vinto il giocatore N.1");
+
+        if (totaleGiocatore2 > totaleGiocatore1)
+        alert("Ha vinto il giocatore N.2");
+
+        if(totaleGiocatore1 == totaleGiocatore2)
+        alert("I giocatori hanno pareggiato");
+
+
+        </script>
+    
+</body>
+</html>
